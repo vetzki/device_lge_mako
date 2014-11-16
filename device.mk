@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-TARGET_PREBUILT_KERNEL := device/lge/mako-kernel/kernel
+TARGET_PREBUILT_KERNEL := /home/mv/Datengrab/android/Projekt/n4/kernel-l/Prebuilt_aosp-mv/zImage
 
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 
