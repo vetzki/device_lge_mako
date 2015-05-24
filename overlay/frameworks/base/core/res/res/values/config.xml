@@ -291,4 +291,7 @@
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
+    <!-- Package name providing WebView implementation. -->
+    <string name="config_webViewPackageName" translatable="false">com.google.android.webview</string>
+
 </resources>
