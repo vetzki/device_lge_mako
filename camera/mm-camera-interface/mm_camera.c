@@ -35,7 +35,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <poll.h>
-#include <string.h>
 #include "mm_camera_sock.h"
 #include "mm_camera_interface2.h"
 #include "mm_camera.h"

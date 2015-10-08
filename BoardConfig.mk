@@ -18,6 +18,7 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
@@ -99,7 +100,36 @@ TARGET_NO_RPC := true
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/mako
 
-BOARD_SEPOLICY_DIRS += device/lge/mako/sepolicy
+BOARD_SEPOLICY_DIRS += \
+       device/lge/mako/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+       bluetooth_loader.te \
+       bridge.te \
+       camera.te \
+       conn_init.te \
+       device.te \
+       domain.te \
+       file.te \
+       file_contexts \
+       hostapd.te \
+       kickstart.te \
+       mediaserver.te \
+       mpdecision.te \
+       netmgrd.te \
+       property.te \
+       property_contexts \
+       qmux.te \
+       rild.te \
+       rmt.te \
+       sensors.te \
+       surfaceflinger.te \
+       system_server.te \
+       tee.te \
+       te_macros \
+       thermald.te \
+       ueventd.te
+
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
