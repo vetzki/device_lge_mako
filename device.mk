@@ -45,7 +45,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 ifeq ($(USE_SVELTE_KERNEL),true)
 LOCAL_KERNEL := device/lge/mako_svelte-kernel/kernel
 else
-LOCAL_KERNEL := /home/mv/Datengrab/android/Projekt/n4/kernel-l/Prebuilt_aosp-mv/zImage
+LOCAL_KERNEL := device/lge/mako-kernel/kernel
 endif
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
