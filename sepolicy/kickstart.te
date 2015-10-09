@@ -4,11 +4,11 @@ type kickstart_exec, file_type, exec_type;
 
 init_daemon_domain(kickstart)
 
-# Spawn /system/bin/efsks and /system/bin/ks
-allow kickstart kickstart_exec:file { open execute_no_trans getattr };
-
 # Let qcks access /dev/mdm node (modem driver)
 allow kickstart radio_device:chr_file r_file_perms;
+
+Spawn /system/bin/efsks and /system/bin/ks
+allow kickstart kickstart_exec:file rx_file_perms;
 
 # Access USB host ks bridge drivers
 allow kickstart kickstart_device:chr_file rw_file_perms;
