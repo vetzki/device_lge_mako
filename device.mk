@@ -136,9 +136,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=320
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	telephony.lteOnGsmDevice=1 \
-	ro.telephony.default_network=9 \
-	ro.ril.def.preferred.network=9
+	telephony.lteOnGsmDevice=0 \
+	ro.telephony.default_network=0 \
+	ro.ril.def.preferred.network=0
 
 # Audio Configuration
 # FIXME: Remove persist.audio.handset.mic and persist.audio.fluence.mode
