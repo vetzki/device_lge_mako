@@ -218,13 +218,6 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 384000
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 384000
 
-    # ondemand govenor
-    write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold_multi_core 60
-    write /sys/devices/system/cpu/cpufreq/ondemand/optimal_freq 918000
-    write /sys/devices/system/cpu/cpufreq/ondemand/sync_freq 1026000
-    write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold_any_cpu_load 80
-
-
     # disable diag port
     rm /dev/diag
 
