@@ -19,7 +19,6 @@
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-        LiveWallpapers \
         LiveWallpapersPicker \
         VisualizationWallpapers
 
