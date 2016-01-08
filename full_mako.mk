@@ -20,7 +20,7 @@
 # Live Wallpapers
 PRODUCT_PACKAGES += \
         LiveWallpapersPicker \
-        VisualizationWallpapers
+        librs_jni
 
 
 # Get the long list of APNs
