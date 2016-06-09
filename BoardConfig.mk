@@ -119,27 +119,3 @@ SMALLER_FONT_FOOTPRINT := true
 MALLOC_IMPL := dlmalloc
 
 -include vendor/lge/mako/BoardConfigVendor.mk
-
-#TWRP config
-TW_THEME := portrait_hdpi
-TW_THEME_LANDSCAPE := landscape_hdpi
-RECOVERY_SDCARD_ON_DATA := true
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-BOARD_HAS_NO_REAL_SDCARD := true
-TW_INCLUDE_CRYPTO := true
-TW_NO_USB_STORAGE := true
-
-#MultiROM config. MultiROM also uses parts of TWRP config
-MR_INPUT_TYPE := type_b
-MR_INIT_DEVICES := device/lge/mako/mr_init_devices.c
-MR_RD_ADDR := 0x82500000
-MR_DPI := hdpi
-MR_DPI_FONT := 216
-MR_FSTAB := device/lge/mako/twrp.fstab
-MR_KEXEC_MEM_MIN := 0x85000000
-MR_INFOS := device/lge/mako/mrom_infos
-MR_DEVICE_RECOVERY_HOOKS := device/lge/mako/mr_hooks_recovery.c
-MR_DEVICE_RECOVERY_HOOKS_VER := 1
-
-DEVICE_RESOLUTION := 768x1280
-TARGET_RECOVERY_IS_MULTIROM := true
