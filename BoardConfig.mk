@@ -111,10 +111,7 @@ HAVE_ADRENO_SOURCE:= false
 USE_MINIKIN := true
 
 # Include an expanded selection of fonts
-EXTENDED_FONT_FOOTPRINT := false
-
-# See platform_external_noto-fonts
-SMALLER_FONT_FOOTPRINT := true
+EXTENDED_FONT_FOOTPRINT := true
 
 MALLOC_IMPL := dlmalloc
 
