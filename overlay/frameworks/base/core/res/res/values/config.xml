@@ -295,6 +295,17 @@
     <!-- enable doze power management -->
     <bool name="config_enableAutoPowerModes">true</bool>
 
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">17</integer>
+
+    <!-- Dream of notifications -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <bool name="config_dozeAfterScreenOff">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+
+    <!-- Whether doze feature is enabled by default in settings. -->
+    <bool name="config_doze_enabled_by_default">false</bool>
+
     <!-- Device configuration setting the /proc/sys/vm/extra_free_kbytes tunable
     in the kernel (if it exists).  A high value will increase the amount of memory
     that the kernel tries to keep free, reducing allocation time and causing the
